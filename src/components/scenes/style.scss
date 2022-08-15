@@ -1,0 +1,142 @@
+#scenes{
+    border: 2px solid #47fbff;
+    background-color: #000000b0;
+    box-shadow: 0 0 40px 20px #077c7e4d inset;
+    border-radius: 10px;
+    color:$theme-color;
+    .scenes_title{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 2px;
+        align-items: center;
+        margin-top: 5px;
+        border-bottom: 1px solid #47fbff;
+        h2{
+            color:$theme-color;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+        img{
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+        }
+    }
+    .scenes_content{
+        padding: 5px 10px;
+        ul{
+            width: 570px;
+            height: 204px;
+            overflow-y: overlay;
+            @include scrollbar(4px);
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                position: relative;
+                overflow: hidden;
+                background: #15252b;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 10px 5px;
+                img{
+                    width: 180px;
+                    height: 150px;
+                    border-radius: 10px 10px 0 0;
+                }
+                .scenesName{
+                    padding: 3px 0;
+                    font-size: 17px;
+                }
+                .do_somethig{
+                    position: absolute;
+                    top:-100%;
+                    left: 0;
+                    width: 180px;
+                    height: 182px;
+                    background: rgba(0,0,0,.6);
+                    transition: 0.5s;
+                    padding: 20px 10px;
+                    border-radius: 10px;
+                    .name{
+                        span{
+                            font-size: 14px;
+                            display: inline-block;
+                            margin-bottom: 10px;
+                        }
+                        .ant-input{
+                            height: 30px;
+                            background: none;
+                            color: #fff;
+                        }
+                    }
+                    .buttons{
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: space-around;
+                        .ant-btn{
+                            cursor: pointer;
+                        }                   
+                    }
+                }
+            }
+            li:hover .do_somethig{
+                top:0%;
+            }
+            .add_scenes{
+                position: relative;
+                overflow: hidden;
+                width: 178px;
+                height: 180px;
+                background:none;
+                border: 1px solid rgb(94, 224, 192);
+                .handleAdd{
+                    width: 178px;
+                    height: 180px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    cursor: pointer;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin:55px 0 20px;
+                    }
+                }
+                .add_somethig{
+                    position: absolute;
+                    left: 0;
+                    width: 178px;
+                    height: 179px;
+                    background: rgba(0,0,0,.6);
+                    transition: 0.5s;
+                    padding: 20px 10px;
+                    border-radius: 10px;
+                    .name{
+                        span{
+                            font-size: 14px;
+                            display: inline-block;
+                            margin-bottom: 10px;
+                        }
+                        .ant-input{
+                            height: 30px;
+                            background: none;
+                            color: #fff;
+                        }
+                    }
+                    .buttons{
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: space-around;
+                        .ant-btn{
+                            cursor: pointer;
+                        }                   
+                    }
+                }
+            }
+        }
+    }
+}

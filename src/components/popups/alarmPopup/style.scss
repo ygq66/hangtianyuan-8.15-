@@ -1,0 +1,160 @@
+#alarmPopup{
+    @include notSelect;
+    position: relative;
+    .alarmPopup_content{
+        width: 400px;
+        height: 300px;
+        border: 2px solid #47fbff;
+        background-color: #000000b0;
+        box-shadow: 0 0 40px 20px #077c7e4d inset;
+        border-radius: 20px;
+        .closeImg{
+            position: absolute;
+            right:15px;
+            top:15px;
+            cursor: pointer;
+        }
+        .alarmPopup_select{
+            margin-top: 15px;
+            margin-left: 35px;
+            .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+                background:transparent;
+                border-color:$theme-color;
+                color: $theme-color;
+                border-radius: 5px;
+                // width: 20px;
+                // height: 30px;
+                font-size: 13px;
+                .ant-select-selection-item{
+                    // margin-top: 4px;
+                }
+            }
+            .ant-select-arrow{
+                color: $theme-color;
+                // font-size: 22px;
+                // top:37%;
+                // right: 23px;
+            }
+        }
+        .line{
+            width: 100%;
+            padding: 0 13px;
+        }
+        // .line{
+        //     padding: 0 15px;
+        //     margin-top: 5px;
+        //     width: 100%;
+        //     text-align: center;
+        //     height: 2px;
+        //     img{
+        //         width: 100%;
+        //     }
+        // }
+        .alarmPopup_table{
+            padding:0 14px; 
+            overflow-y: overlay;
+            @include scrollbar(1px);
+            table{
+                width: 100%; 
+                thead{
+                    tr{
+                        td{
+                            color:#73d5da;
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                    }
+                }
+                tbody{
+                    display: block;
+                    margin-top: 2px;
+                    height: 192px;
+
+                    tr{
+                        display: flex;
+                        align-items: center;
+                        border-bottom:1px solid #314246;
+                        td{
+                            font-size: 13px;
+                            color:#d9f0f0;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            line-height: 32px;
+                        }
+                        td:nth-child(1){
+                            width: 30px!important;
+                        }
+                        td:nth-child(2){
+                            width: 30px!important;
+                        }
+                        .button{
+                            display: flex;
+                            .queren,.hulue{
+                                cursor: pointer;
+                                margin: 0 2px;
+                                width: 68px;
+                                height: 22px;
+                                line-height: 20px;
+                                font-size: 10px;
+                                padding: 0 2px;
+                                border:1px solid #d9f0f0;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                tr{
+                    display: flex;
+                    justify-content: space-between;
+                    td{
+                        float:left; 
+                        flex: 1;
+                        width: 25%;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+    }
+    .faceImg{
+        position: absolute;
+        left:-370px;
+        top: 50px;
+        border: 2px solid #47fbff;
+        background-color: #000000b0;
+        box-shadow: 0 0 40px 20px #077c7e4d inset;
+        border-radius: 20px;
+        padding: 20px;
+        .titleName{
+            color:$theme-color;
+            margin-bottom: 10px;
+            span{
+                color:#d9f0f0;
+            }
+        }
+        .faceImgContent{
+            display: flex;
+            .faceUrl,.imageUrl{
+                color:$theme-color;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 130px;
+                    height: 140px;
+                    margin: 8px 10px 0;
+                }
+            }
+        }
+        .closeImg{
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            right:10px;
+            top:10px;
+            cursor: pointer;
+        }
+    }
+}

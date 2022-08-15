@@ -1,0 +1,154 @@
+#bed{
+    display: flex;
+    .bedList{
+        border: 2px solid #2e75f8;
+        background-color: #000000b0;
+        box-shadow: 0 0 40px 20px #1b7fdd4d inset;
+        border-radius: 10px;
+        width: 250px;
+        height: 400px;
+        .bl_header{
+            display: flex;
+            color:#fff;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 13px;
+            border-bottom: 1px solid #58718d;
+            h2{
+                color:#fff;
+                font-size: 17px;
+            }
+            .bedRoom{
+                font-size: 17px;
+                font-weight: 500;
+            }
+            img{
+                width: 12px;
+                height: 12px;
+                cursor: pointer;
+            }
+        }
+        .bl_content{
+            margin-top: 10px;
+            overflow: auto;
+            height: 330px;
+            @include scrollbar(2px);
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 10px;
+                    color:#fff;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    .name_and_num{
+                        p{
+                            padding: 2px 0;
+                            span{
+                                color:#fff;
+                            }
+                        }
+                    }
+                    .findDetails{
+                    width: 100%;
+
+                        font-size: 13px;
+                        padding: 0 10px;
+                        border: 1px solid #a2d7d8;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        color: #fff;
+                        transition: all .2s;
+                    }
+                }
+                .active{
+                    color: #9bc1d3;
+                    background: #4d73bb;
+                    border: 1px solid #9bc1d3;
+                }
+            }
+        }
+    }
+    .bedDetails{
+        margin-left: 50px;
+        width: 960px;
+        height: 450px;
+        border-radius: 10px;
+        border: 2px solid $theme-color;
+        background-color: #000000b0;
+        box-shadow: 0 0 40px 20px #1b7fdd4d inset;
+        .bd_header{
+            color:#fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 15px 5px 0;
+            border-bottom: 1px solid #7197bb;
+            .header_left{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 45px;
+                }
+            }
+            .closeImg{
+                cursor: pointer;
+            }
+        }
+        .bd_content{
+            padding: 16px 20px;
+            ul{
+                height: 380px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                li{
+                    margin-bottom: 5px;
+                    margin-right: 25px;
+                    .prisonerPhoto{
+                        width: 130px;
+                        height: 150px;
+                        img{
+                            width: 130px;
+                            height: 150px;
+                        }
+                    }
+                    .bd_type{
+                        color:#fff;
+                    }
+                    .bd_data{
+                        color:#fff;
+                    }
+                }
+                .utils_li{
+                    height: 22px;
+                    color:#fff;
+                    overflow: hidden;
+                    white-space: nowrap; 
+                    text-overflow:ellipsis;
+                }
+                li:nth-child(1){
+                    margin-bottom: 12px;
+                }
+                li:nth-child(4),li:nth-child(5),li:nth-child(6),li:nth-child(7){
+                    @extend .utils_li;
+                    width: 160px;
+                }
+                li:nth-child(10){
+                    width: 130.38px;
+                    @extend .utils_li;
+                }
+                li:nth-child(24),li:nth-child(25){
+                    color:#fff;
+                    width: 367px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}

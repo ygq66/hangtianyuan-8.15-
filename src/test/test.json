@@ -1,0 +1,43 @@
+{
+  "method": "OnEventNotify",
+  "params": {
+    "ability": "event_rule",
+    "events": [{
+      "data": {
+        "cardId": "",
+        "eventName": "陕-汉中监狱-监墙北11_区域入侵",
+        "eventTypeName": "区域入侵",
+        "handleStatus": 2,
+        "linkInfo": {
+          "linkPlayRealCameraIdx": "fd64d88d80c14277a6a4bc06d82638f4",
+          "linkPlayBackCameraIdx": "fd64d88d80c14277a6a4bc06d82638f4",
+          "linkUser": [{
+            "userId": "zhzx",
+            "userRealName": "指挥中心"
+          }, {
+            "userId": "zhzxb",
+            "userRealName": "指挥中心备用"
+          }, {
+            "userId": "zhzxc",
+            "userRealName": "zhzxc"
+          }, {
+            "userId": "zhzxjc",
+            "userRealName": "指挥中心警察"
+          }]
+        },
+        "snapUrl": "http://10.0.160.71:6120/pic?did=2&bid=886875&pid=1073741824&size=379591&ptime=1658942981,http://10.0.160.71:6120/pic?did=2&bid=886875&pid=1073741824&size=379591&ptime=1658942981,http://10.0.160.124:6120/pic?3dd251z84-=s9421346fee8=t1i9m*=p1p3i=d1s*i5d4d*=*1b6i9e858c4c6dad1--91f52c-598i7cd*e11fi45=",
+        "userData": {}
+      },
+      "eventId": "0463f83cb31d44cb82a46ce565f819bd",
+      "eventLvl": 2,
+      "eventType": 131588,
+      "happenTime": "2022-07-28T01:29:42.000+08:00",
+      "srcIndex": "fd64d88d80c14277a6a4bc06d82638f4",
+      "srcName": "陕-汉中监狱-监墙北11",
+      "srcType": "camera",
+      "status": 2,
+      "timeout": 0
+    }],
+    "sendTime": "2022-07-29T00:14:41.320+08:00"
+  }
+}

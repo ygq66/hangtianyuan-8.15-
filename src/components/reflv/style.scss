@@ -1,0 +1,23 @@
+/* 进度条 */
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+// 当前播放时间
+video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
+// 剩余时间
+video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+// 音量按钮
+video::-webkit-media-controls-volume-control-container {
+  display: none !important;
+}
+video::-internal-media-controls-overflow-button {
+  display: none !important;
+}

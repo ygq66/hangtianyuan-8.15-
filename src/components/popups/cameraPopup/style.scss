@@ -1,0 +1,39 @@
+#cameraPopup{
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    border: 2px solid #47fbff;
+    background-color: #000000b0;
+    box-shadow: 0 0 40px 20px #077c7e4d inset;
+    border-radius: 20px;
+    background-size: cover;
+    .cp_title{
+        margin-top: 16px;
+        font-size: 18px;
+        display: flex;
+        color:#46f8fc;
+        justify-content: space-between;
+        padding: 0 30px;
+        img{
+            cursor: pointer;
+        }
+    }
+    .cp_content{
+        color:#b6fdff;
+        font-size: 15px;
+        padding: 0 40px;
+        margin-top: 10px;
+        .titleName{
+            p{
+                width: 150px;
+                overflow:hidden;
+                margin-top: 6px;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                .hidden{
+                    cursor: pointer;
+               }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#videoWss{
+  border-radius: 5px;
+  width: 399px;
+  height:auto;
+  .video_header{
+    width: 100%;
+    padding: 0 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: #1E4380;
+    color: #Fff;
+    justify-content: space-between;
+  }
+  .vh_right{
+    display: inline-block;
+    .qping{
+      display: inline-block;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+  }
+}

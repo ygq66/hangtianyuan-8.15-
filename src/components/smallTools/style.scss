@@ -1,0 +1,106 @@
+#smallTools{
+    @include notSelect;
+    display: flex;
+    align-items: center;
+    .st_iconlist{
+        width: 356px;
+        height: 70px;
+        background-color: #000000b0;
+        box-shadow: 0 0 40px 20px #1b7fdd4d inset;
+        border: 1px solid $theme-color;
+        border-radius: 40px;
+        .iconTools{
+            ul{
+                display: flex;
+                padding: 0 40px;
+                height: 70px;
+                align-items: center;
+                justify-content: space-around;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color:$theme-color-t;
+                    margin-top: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .roam{
+            position: absolute;
+            top: 90px;
+            left: 0px;
+            border: 2px solid $theme-color;
+            background-color: #000000b0;
+            box-shadow: 0 0 40px 20px #1b7fdd4d inset;
+            border-radius: 10px;
+            width: 250px;
+            height: 300px;
+            color:#fff;
+            .roamTitle{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 15px 2px;
+                align-items: center;
+                margin-top: 5px;
+                border-bottom: 1px solid $theme-color;
+                h2{
+                    color:#fff;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                }
+                img{
+                    width: 12px;
+                    height: 12px;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                height: 240px;
+                overflow-y: auto;
+                @include scrollbar(2px);
+                li{
+                    padding: 7.5px 19px;
+                    display: flex;
+                    transition: all .3s;
+                    justify-content: space-between;
+                    span{
+                        font-size: 15px;
+                    }
+                    .doSomething{
+                        span{
+                            margin-left: 5px;
+                            cursor: pointer;
+                        }
+                        img{
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .active{
+                    background:rgba(7, 134, 238, 0.233);
+                }
+            }
+        }
+        .scenes_tool{
+            position: absolute;
+            top: 500px;
+            left:-750px;
+        }
+    }
+    .st_button{
+        background: url(../../assets/images/xiaogongju.png) center center no-repeat;
+        width: 130px;
+        height: 130px;
+        color:$theme-color-t;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin:40px 0 3px 0;
+        }
+    }
+}

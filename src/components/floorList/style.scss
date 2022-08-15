@@ -1,0 +1,41 @@
+#floorList{
+    width: 180px;
+    height: 350px;
+    border: 2px solid $theme-color;
+    background-color: #000000b0;
+    box-shadow: 0 0 40px 20px #1b7fdd4d inset;
+    border-radius: 20px;
+    @include notSelect();
+    .fl_title{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #5d79a3;
+        span{
+            color:#fff;
+            font-size: 17px;
+        };
+        img{
+            cursor: pointer;
+        }
+    }
+    .fl_content{
+        margin-top: 10px;
+        margin-left: 50px;
+        height: 275px;
+        overflow-y: overlay;
+        @include scrollbar(2px);
+        ul{
+            li{
+                cursor: pointer;
+                margin-bottom: 10px;
+                font-size: 17px;
+                color:#d9f0f0;
+                transition: all .2s;
+            }
+            .acitve{
+                color:rgb(155, 193, 211);
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+  {
+ 
+    "Url":"http://192.168.0.245:8090/Map5.5",
+    "Url2":"http://192.168.0.245:8096/MapW5.5",
+    "projectId":"e7ec83d5a4024f828693edb1d1db8d70",
+    "token":"38b56b60d7538e242518e7a32b9be88c",
+    "projectId2":"https://10.0.160.42:8092/Map5.5",
+    "token2":"https://10.0.160.42:8095/MapW5.5",
+    "videoSocket":"wss://127.0.0.1:1177",
+    "alarmSocket":"ws://localhost:4647",
+    "doorInterface":"https://10.0.160.42:8082",
+    "luwangIp":"https://10.0.160.42:9903",
+    "intercomSocket":"ws://127.0.0.1:19902",
+    "videoDownload":"https://10.0.160.42:8080/Video.zip",
+    "luwangName":"nmd",
+    "photoUrl":"https://10.13.12.250:9081"
+}

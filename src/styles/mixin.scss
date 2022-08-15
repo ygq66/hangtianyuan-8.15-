@@ -1,0 +1,55 @@
+//不被选中
+@mixin notSelect() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+// 滚动条
+@mixin scrollbar($width) {
+    &::-webkit-scrollbar{width:$width;height:5px;border-radius: 5px;}
+    &::-webkit-scrollbar-track{background-color: transparent;border-radius: 5px;height: 260px;}
+    &::-webkit-scrollbar-thumb{background: $theme-color;border-radius: 5px;}
+    &::-webkit-scrollbar-thumb:hover{background: $theme-color;}
+}
+@mixin scrollbar2($height) {
+    &::-webkit-scrollbar{width:5px;height:$height;border-radius: 5px;}
+    &::-webkit-scrollbar-track{background-color: transparent;border-radius: 5px;height: 260px;}
+    &::-webkit-scrollbar-thumb{background: $theme-color;border-radius: 5px;}
+    &::-webkit-scrollbar-thumb:hover{background: $theme-color;}
+}
+// ant design pro Empty
+.ant-empty-description{
+    color:rgb(155, 70, 167)
+}
+// ant design pro tree
+.ant-tree{
+    background-color:transparent;
+    color:white;
+    .ant-tree-node-content-wrapper.ant-tree-node-selected{
+        background-color:rgb(4, 153, 61)
+    }
+    .ant-tree-switcher{
+        background: none;
+    }
+    .ant-tree-node-content-wrapper:hover{
+        background-color:rgb(4, 153, 61)
+    }
+}
+// ant design pro spin
+.ant-spin-blur::after{
+    opacity: 0;
+}
+.ant-spin{
+    color:$theme-color;
+}
+.ant-spin-container::after{
+    border-radius: 8px;
+}
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-text {
+    text-shadow:none!important;
+    padding-top: 25px!important;
+}
+.ant-spin-nested-loading > div > .ant-spin {
+    top: 230px;
+}

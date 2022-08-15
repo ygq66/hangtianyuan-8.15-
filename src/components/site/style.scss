@@ -1,0 +1,21 @@
+#site{
+    ul{
+        li{
+            background: url(../../assets/site/bj.png) no-repeat;
+            width: 60px;
+            height: 50px;
+            margin-bottom: 12px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+            @include notSelect;
+            transition: all .3s;
+        }
+        li:last-child { 
+            margin-bottom:0;
+        }
+        .li_xz{
+            background: url(../../assets/site/bj-xz.png) no-repeat;
+        }
+    }
+}

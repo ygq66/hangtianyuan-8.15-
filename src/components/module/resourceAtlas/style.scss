@@ -1,0 +1,389 @@
+#ResourceAtlas{
+    @include notSelect;
+    .ResourceAtlas_top {
+        position: relative;
+        background: url(../../../assets/images/tc-title.png) no-repeat;
+        background-size:100%;
+        width: 358px;
+        height: 34px;
+        line-height: 34px;
+        h1{
+            color: #47fbff;
+            font-size: 18px;
+            margin-left: 23px;
+            letter-spacing: 1px;
+        }
+        img {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+
+    .ResourceAtlas_list {
+        width: 356px;
+        margin-top: -2px;
+        margin-left: 2px;
+        border: 2px solid $theme-color;
+        height: calc(100vh - 170px);
+        border-radius: 0 0 15px 15px;
+        background-color: #000000b0;
+        box-shadow: 0 0 40px 20px #077c7e4d inset;
+        .ant-spin-nested-loading > div > .ant-spin {
+            top:0px;
+        }
+        .ResourceAtlas_list_top{
+            width: 100%;
+            height: 39.5vh;
+            border-bottom: 2px solid rgb(67,212,218);
+            ul{
+                height: 173px;
+                width: 100%;
+                padding:15px 0 0 35px;
+                overflow-y: scroll;
+                @include scrollbar(2px);
+                li{
+                    cursor: pointer;
+                    float: left;
+                    width: 136px;
+                    height: 70px;
+                    margin: 6px 8px 0px 0px ;
+                    background: url("../../../../src/assets/images/zc.png") no-repeat center center;
+                    transition: all .3s;
+                    span:nth-child(1){
+                        display: block;
+                        text-align: center;
+                        font-size: 27px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-weight: 500;
+                        color:rgb(67,212,218);
+                        transition: all .3s;
+
+                    }
+                }
+                li:hover{
+                    background: url("../../../../src/assets/images/xz.png") no-repeat center center;
+                    span:nth-child(1){
+                        color:rgb(242,93,71);
+                    }
+                }
+
+                span:nth-child(2){
+                    display: block;
+                    text-align: center;
+                    height: 25px;
+                    font-size: 15px;
+                    color:white;
+                }
+            }
+            #chartRate{
+                width: 100%;
+                height: 220px;
+                margin-top: -22px;
+                color: white;
+                z-index: 0;
+            }
+            
+        }
+        .ResourceAtlas_list_bottom{
+            width: 100%;
+            height: 39.5vh;
+            padding-left: 13PX;
+            .ResourceAtlas_list_bottom_Pdfbt{
+                cursor: pointer;
+                float: left;
+                width: 148px;
+                height: 36px;
+                line-height: 36px;
+                margin-top: 20px;
+                text-align: center;
+                font-weight: 650;
+                background: url("../../../../src/assets/images/pdf-bt.png") no-repeat center center;
+                background-size: 95%;
+                margin-left: 10px;
+            }
+        }
+        .ListTree{
+            color: white;
+            padding-left: 10px;
+            padding-top: 10px;
+            width: 96%;
+            height: 325px;
+            overflow: auto;
+            border-radius: 15px;
+            @include scrollbar(3px);
+            .ant-spin-nested-loading > div > .ant-spin {
+                top: 120px;
+            }
+            // ul{
+            //     margin-left: 15px;
+            // }
+            // li{
+            //     margin-top: 5px;
+            // }
+           
+            // i{
+            //     float: left;
+            //     width: 19px;
+            //     height: 10px;
+            //     margin-top: 5px;
+            //     background: url("../../../../src/assets/images/jb2.png")no-repeat center center ;
+            //  }
+            //  span:hover{
+                 
+            //  }
+            i{
+                float: left;
+                width: 19px;
+                height: 10px;
+                margin-top: 5px;
+                background: url("../../../../src/assets/images/jb2.png")no-repeat center center ;
+            }
+
+        }
+    }
+
+    .ResourceAtlas_TC{
+        position: fixed;
+        top: 13px;
+        left: 380px;
+        width: 1350px;
+        height: 780px;
+        background: url("../../../../src/assets/images/bjt.png") no-repeat center center;
+        text-align: center;
+        .ResourceAtlas_TC_title{
+            display:inline-block;
+            margin-top: 30px;
+            text-align: center;
+            width: 365px;
+            height: 45px;
+            background: url("../../../../src/assets/images/line2.png") no-repeat center;
+            background-size: 100%;
+            h1{
+                display: inline-block;
+                margin: 0;
+                color:white;
+                font-size: 25px;
+                margin-top: -5px;
+                letter-spacing: 1px;
+                text-shadow: 0 0 10px #47fbff, 0 0 20px #47fbff, 0 0 0px #47fbff;
+            }
+            img{
+                cursor: pointer;
+                position: absolute;
+                top: 28px;
+                right: 28px;
+            }
+        }
+        .shebei_total{
+            margin-top: 70px;
+            display: inline-block;
+            width: 1051px;
+            height: 23px;
+            color: white;
+            background: url("../../../../src/assets/images/line3.png") no-repeat center;
+            ul{
+                text-align: center;
+                width: 100%;
+                margin-top: -30px;
+                li{
+                    display: inline-block;
+                    padding: 0 30px;
+                    i:nth-child(1){
+                        float: left;
+                        width: 6px;
+                        height: 30px;
+                        background: url("../../../../src/assets/images/left.png")no-repeat;
+                        background-size: 80%;
+                    }
+    
+                    i:nth-child(4){
+                        float: left;
+                        width: 6px;
+                        height: 30px;
+                        background: url("../../../../src/assets/images/right.png")no-repeat;
+                        background-size: 80%;
+                    }
+                    .ResourceAtlas_TC_title_txt{
+                        width: 50px;
+                        height: 33px;
+                        float: left;
+                        span{
+                            width: 37px;
+                            height: 20px;
+                            display: block;
+                            font-size: 12px;
+                            text-align: center;
+                        }
+                        span:nth-child(1){
+                            font-size: 18px;
+                            font-weight: 700;
+                            margin-top: -10px;
+                            margin-bottom: 3px;
+                            color: rgb(18,246,254);
+                        }
+                    }
+                    img{
+                        float: left;
+                        width: 60px;
+                        height: 57px;
+                        margin-top: -15px;
+                    }
+                }
+            }
+        }    
+        .project_name{
+            display: block;
+            width: 300px;
+            height: 112px;
+            color: rgb(250, 243, 80);
+            font-size: 19px;
+            font-weight: 550;
+            margin: 40px auto 0px;
+            background: url("../../../assets/images/typz.png") no-repeat;
+            background-size: 100%;
+            line-height: 64px;
+            text-align: center;
+        }         
+        .ResourceAtlas_TC_model{
+            width: 1350px;
+            height: 411px;
+            overflow-y: scroll;
+            @include scrollbar(5px);
+            .ResourceAtlas_TC_left{
+                text-align: center;
+                padding-right: 10px;
+                float: left;
+                // width:40%;
+                height: 100%;
+                // border-right: 1px solid rgb(18,246,254);
+                overflow-x: auto;
+                overflow-y: hidden;
+                @include scrollbar(3px);
+                .ResourceAtlas_TC_left_tit{
+                    display: inline-block;
+                    .tit_spans{
+                        margin-top: 0;
+                    }
+                }
+                ul:nth-last-child(1){
+                    display: flex;
+                }
+                li{
+                    float: right;
+                    // .tree_childer_model{
+                    //     margin-right: 15px;
+                    // }
+                }
+                 
+            }
+
+            .ResourceAtlas_TC_right{
+                text-align: center;
+                float: left;
+                // width: 60%;
+                height: auto;
+                border-left: 1px dashed $theme-color;
+
+                // overflow-y: scroll;
+                @include scrollbar(4px);
+                @include scrollbar2(10px);
+                .ResourceAtlas_TC_right_tit{
+                    // margin-left: 230px;
+                    display: inline-block;
+                    .tit_spans{
+                        margin-top: 0;
+                    }
+                }
+                ul:nth-last-child(1){
+                    display: flex;
+                }
+                .tree_childer_build{
+                    width: 89px;
+                    height: 119px;
+                    background: url("../../../assets/images/jx-g.png") no-repeat ;
+                    background-size: 78%;
+                    margin-left:  20px;
+                    
+                    img{
+                        float: left;
+                        width: 12px;
+                        height: 18px;
+                    }
+                    .tree_childer_model_spans{
+                        width: 80%;
+                        height: 95px;
+                        overflow: auto;
+                        overflow-x: hidden;
+                        @include scrollbar(10px);
+                    }
+                    span{
+                        width: 70px;
+                        text-align: center;
+                        line-height: 20px;
+                        display: block;
+                        color: rgb(18,246,254);
+                    }
+                    img:nth-child(1){
+                        margin-left: 3px;
+                    }
+                    p{
+                        width: 100%;
+                        height: 10px;
+                    }
+                   p span{
+                       width: 41px;
+                        float: left;
+                        color: rgb(250, 243, 80);
+                    }
+                   
+                    
+                }
+            }
+           .treechilder{
+               .hhccc{
+                   display: flex;
+                   flex-direction: column;
+               }
+           }
+            .tree_childer_model{
+                width: 89px;
+                height: 110px;
+                background: url("../../../assets/images/jx-k.png") no-repeat bottom;
+                background-size: 90%;
+                margin: 15px 0px 20px 10px;
+                .tree_childer_model_spanR{
+                    width: 92%;
+                    height: 82px;
+                    overflow: auto;
+                    overflow-x: hidden;
+                    @include scrollbar(3px);
+                    margin-top: 5px;
+                    span{
+                        width: 85px;
+                        text-align: center;
+                        line-height: 20px;
+                        display: block;
+                        color: rgb(18,246,254);
+                    }
+                }
+                .tit_spans{
+                    width: 70px;
+                    text-align: center;
+                    line-height: 20px;
+                    display: block;
+                    margin:-10px 0px 0px 10px;
+                    border: 1px dashed rgb(18,246,254);
+                    border-radius: 5px;
+                    color: rgb(250, 243, 80);
+                }
+                // span:nth-child(2){
+                //     color: rgb(18,246,254);
+                //     font-weight: 100;
+                // }
+            }
+        }
+    }
+}
